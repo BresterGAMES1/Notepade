@@ -1,0 +1,99 @@
+.main {
+	border: 2px solid blue;
+	width: 20%;
+	text-align: center;
+	margin: 0 auto;
+	height: 95vh;
+	position: relative;
+	overflow: auto;
+	background: linear-gradient(180deg ,white 30%,#005AFF 60%,red 80%);
+}
+h1 {
+	background-color: #9400D3;
+	margin: 0;
+	color: white; 
+	padding: 10px 0;
+}
+input {
+	width: 97%;
+	border-width: 2px 0;
+	border-style: solid;
+	border-color: #9400D3;
+	font-size: 20px;
+	outline: none;
+	padding-left: 10px;
+	font-family: 'Lobster', cursive;
+	height: 35px;
+}
+body {
+	font-family: 'Lobster', cursive;
+	background: linear-gradient(45deg, red,blue);
+}
+input:focus {
+	background-color: #FFF8DC;
+	color: #808080;
+	border-color: #808080;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+ul img {
+	height: 20px;
+	margin: 2px 5px;
+	vertical-align: sub;
+	width: 0;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+ul li:hover img {
+	width: 20px;
+	opacity: 1;
+}
+ul li {
+	word-wrap: break-word;
+	height: 40px;
+	padding: 5px 0;
+	user-select: none;
+	background-color: #edf1f5;
+	font-size: 20px;
+	overflow: auto;
+}
+ul li:nth-child(2n) {
+  background: #DCDCDC;
+}
+.buttons {
+	position: fixed;
+	bottom: 40px;
+	text-align: center;
+	width: 100%;
+}
+button {
+	padding: 7px 11px;
+	background-color: white;
+	border-color: #9400D3;
+	border-style: solid;
+	border-width:1px;
+	border-radius: 3px;
+	color: #9400D3;
+	transition-duration: 0.4s;
+	margin: 0 5px;
+}
+button:hover {
+	cursor: url("fuck.cur");
+	background-color: #9400D3;
+	color: white;
+	transform: scale(1.2);
+	transition-duration: 0.4s;
+}
+.check {
+	text-decoration: line-through;
+	color: gray;
+}
+@media (max-width: 800px) {
+	.main {
+		width: 90%;
+	}
+}
